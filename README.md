@@ -5,8 +5,8 @@
 A self-hosted platform operated as the internal infrastructure for a one-person company.
 Every service is treated as production.
 
-[![Platform Status](https://img.shields.io/website?url=https%3A%2F%2Fstatus.securebytes.net%2Fstatus%2Flab&label=platform&style=for-the-badge&labelColor=0d1117&color=3fb950)](https://status.securebytes.net/status/lab)
-[![Build](https://img.shields.io/badge/build-month_1_of_6-1f6feb?style=for-the-badge&labelColor=0d1117)](#)
+[![Platform Status](https://img.shields.io/website?url=https%3A%2F%2Fstatus.securebytes.net%2Fstatus%2Flab&label=platform&style=flat-square&color=3fb950)](https://status.securebytes.net/status/lab)
+[![Build](https://img.shields.io/badge/build-month_1_of_6-8b949e?style=flat-square)](#)
 
 ![Proxmox](https://img.shields.io/badge/Proxmox-E57000?style=flat-square&logo=proxmox&logoColor=white)
 ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white)
