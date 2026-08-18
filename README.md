@@ -25,7 +25,7 @@ Every service is treated as production.
 
 ## Overview
 
-Nine internal services behind nginx with wildcard TLS, two public services via Cloudflare Tunnel with identity-aware proxy on the admin surface, and a fourteen-monitor observability stack with push alerting. The architecture diagram above shows the five-layer structure; solid boxes are live, dashed boxes are planned.
+Nine internal services behind nginx with wildcard TLS, Grid at grid.securebytes.net, a public status page via Cloudflare Tunnel, and a fourteen-monitor observability stack with push alerting. The architecture diagram above shows the five-layer structure; solid boxes are live, dashed boxes are deferred or later decisions.
 
 ## Current Footprint
 
@@ -50,8 +50,8 @@ Nine internal services behind nginx with wildcard TLS, two public services via C
 </tr>
 <tr>
 <td><b>Platform</b></td>
-<td>—</td>
-<td>k3s HA cluster (Cilium, Linkerd, ArgoCD)</td>
+<td>Grid</td>
+<td>k3s HA cluster (Cilium, Linkerd, ArgoCD) — later explicit decision</td>
 </tr>
 <tr>
 <td><b>Data</b></td>
@@ -65,8 +65,8 @@ Nine internal services behind nginx with wildcard TLS, two public services via C
 </tr>
 <tr>
 <td><b>Infrastructure</b></td>
-<td>Two-node Proxmox · NAS · pfSense</td>
-<td>Proxmox Backup Server</td>
+<td>Two-node Proxmox · NAS (file share, not PBS)</td>
+<td>—</td>
 </tr>
 </tbody>
 </table>
