@@ -2,11 +2,9 @@
 
 # SecureBytes Platform
 
-A self-hosted platform operated as the internal infrastructure for a one-person company.
-Every service is treated as production.
+A self-hosted platform for network and security infrastructure.
 
 [![Platform Status](https://img.shields.io/website?url=https%3A%2F%2Fstatus.securebytes.net%2Fstatus%2Flab&label=platform&style=flat-square&color=3fb950)](https://status.securebytes.net/status/lab)
-[![Build](https://img.shields.io/badge/build-month_1_of_6-8b949e?style=flat-square)](#)
 
 ![Proxmox](https://img.shields.io/badge/Proxmox-E57000?style=flat-square&logo=proxmox&logoColor=white)
 ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white)
@@ -25,7 +23,7 @@ Every service is treated as production.
 
 ## Overview
 
-Nine internal services behind nginx with wildcard TLS, Grid at grid.securebytes.net, a public status page via Cloudflare Tunnel, and a fourteen-monitor observability stack with push alerting. The architecture diagram above shows the five-layer structure; solid boxes are live, dashed boxes are deferred or later decisions.
+Internal services behind nginx with wildcard TLS, a public status page via Cloudflare Tunnel, and a fourteen-monitor observability stack with push alerting. The architecture diagram above shows the five-layer structure; solid boxes are live, dashed boxes are deferred or later decisions.
 
 ## Current Footprint
 
@@ -50,7 +48,7 @@ Nine internal services behind nginx with wildcard TLS, Grid at grid.securebytes.
 </tr>
 <tr>
 <td><b>Platform</b></td>
-<td>Grid</td>
+<td>LXC services (Vaultwarden, nginx, observability)</td>
 <td>k3s HA cluster (Cilium, Linkerd, ArgoCD) — later explicit decision</td>
 </tr>
 <tr>
