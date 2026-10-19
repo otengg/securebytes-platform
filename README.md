@@ -5,6 +5,7 @@
 A self-hosted platform for network and security infrastructure.
 
 [![Platform Status](https://img.shields.io/website?url=https%3A%2F%2Fstatus.securebytes.net%2Fstatus%2Flab&label=platform&style=flat-square&color=3fb950)](https://status.securebytes.net/status/lab)
+[![Write-up](https://img.shields.io/badge/write--up-securebytes.net-3fb950?style=flat-square&labelColor=0d1117)](https://securebytes.net/projects/securebytes-platform/)
 
 ![Proxmox](https://img.shields.io/badge/Proxmox-E57000?style=flat-square&logo=proxmox&logoColor=white)
 ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white)
@@ -76,5 +77,7 @@ The platform's public status page is monitored continuously and exposes uptime f
 <div align="center">
 
 [**status.securebytes.net/status/lab →**](https://status.securebytes.net/status/lab)
+
+[**Project write-up on securebytes.net →**](https://securebytes.net/projects/securebytes-platform/)
 
 </div>
