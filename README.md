@@ -24,7 +24,7 @@ A self-hosted platform for network and security infrastructure.
 
 ## Overview
 
-Internal services run as containers and VMs on a two-node Proxmox cluster. nginx terminates a wildcard certificate. The firewall is the DNS authority. Sign-in is a lab directory. Remote access is a separate path from that sign-in. The only lab name on the public internet is the status page, reached by a Cloudflare Tunnel with no inbound ports. Home wireless is its own segment and cannot reach the lab. New guests are built with Terraform. Ansible is grouped by role.
+Internal services run as containers and VMs on a two-node Proxmox cluster. nginx terminates a wildcard certificate. The firewall is the DNS authority. Sign-in is a lab directory. Remote access is a separate path from that sign-in. Visitors can open the status page. The rest of the lab is private, reached through a Cloudflare Tunnel with no inbound ports. House Wi-Fi is its own network and has no route into the lab. New guests are built with Terraform. Ansible is grouped by role.
 
 ## What is running
 
@@ -58,7 +58,7 @@ Internal services run as containers and VMs on a two-node Proxmox cluster. nginx
 </tr>
 <tr>
 <td><b>Segments</b></td>
-<td>Lab · management · IoT · DMZ · home wireless. Home wireless cannot reach the lab.</td>
+<td>Lab · management · IoT · DMZ · house Wi-Fi. House Wi-Fi has no route into the lab.</td>
 </tr>
 <tr>
 <td><b>Infrastructure</b></td>

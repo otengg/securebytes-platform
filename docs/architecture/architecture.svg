@@ -1,6 +1,6 @@
 <svg width="100%" viewBox="0 0 1080 860" role="img" xmlns="http://www.w3.org/2000/svg">
 <title>SecureBytes platform architecture, public</title>
-<desc>Live lab layers without internal addresses or hardware identifiers. Home wireless cannot reach the lab.</desc>
+<desc>Live lab layers. Visitors see a status page. The lab is private. House Wi-Fi has no route in.</desc>
 <defs>
 <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
 <stop offset="0" stop-color="#10b981"/>
@@ -28,7 +28,7 @@
 <text x="1016" y="64" fill="#10b981" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" letter-spacing="2" text-anchor="end">LIVE</text>
 <circle cx="948" cy="60" r="3.5" fill="#10b981"/>
 <text x="64" y="108" fill="#f7f8fb" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="40" font-weight="600">Architecture</text>
-<text x="64" y="140" fill="#8b93a7" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="16">One public name. The home network stops before the lab.</text>
+<text x="64" y="140" fill="#8b93a7" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="16">A public status page. A private lab. House Wi-Fi has no route in.</text>
 
 <line x1="540" y1="268" x2="540" y2="620" stroke="url(#spine)" stroke-width="1.5"/>
 
@@ -97,8 +97,8 @@
 
 <line x1="668" y1="692" x2="736" y2="692" stroke="#ef9f27" stroke-opacity="0.8" stroke-width="1.5" stroke-dasharray="2 5"/>
 <rect x="748" y="664" width="268" height="56" rx="14" fill="#10131a" stroke="#ef9f27" stroke-opacity="0.75"/>
-<text x="882" y="688" fill="#f7f8fb" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="15" font-weight="600" text-anchor="middle">Home wireless</text>
-<text x="882" y="706" fill="#e8b86d" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" text-anchor="middle">cannot reach the lab</text>
+<text x="882" y="688" fill="#f7f8fb" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="15" font-weight="600" text-anchor="middle">House Wi-Fi</text>
+<text x="882" y="706" fill="#e8b86d" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" text-anchor="middle">no route into the lab</text>
 
 <!-- Foundation -->
 <rect x="64" y="760" width="952" height="64" rx="16" fill="#0c0e14" stroke="#ffffff" stroke-opacity="0.06"/>
