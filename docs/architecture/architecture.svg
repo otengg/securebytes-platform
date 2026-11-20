@@ -1,6 +1,6 @@
-<svg width="100%" viewBox="0 0 1080 860" role="img" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" viewBox="0 0 1080 828" role="img" xmlns="http://www.w3.org/2000/svg">
 <title>SecureBytes platform architecture, public</title>
-<desc>Live lab layers. Anyone can open the status page. The Wi-Fi in the house cannot reach the lab.</desc>
+<desc>Live lab architecture. The status page is public. House Wi-Fi cannot reach the lab.</desc>
 <defs>
 <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
 <stop offset="0" stop-color="#10b981"/>
@@ -20,16 +20,16 @@
 </radialGradient>
 </defs>
 
-<rect width="1080" height="860" fill="#07080d"/>
-<rect width="1080" height="860" fill="url(#dots)"/>
+<rect width="1080" height="828" fill="#07080d"/>
+<rect width="1080" height="828" fill="url(#dots)"/>
 <ellipse cx="540" cy="40" rx="420" ry="180" fill="url(#glow)"/>
 
 <text x="64" y="64" fill="#10b981" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" letter-spacing="3">SECUREBYTES</text>
 <text x="1016" y="64" fill="#10b981" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" letter-spacing="2" text-anchor="end">LIVE</text>
 <circle cx="948" cy="60" r="3.5" fill="#10b981"/>
 <text x="64" y="108" fill="#f7f8fb" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="40" font-weight="600">Architecture</text>
-<text x="64" y="140" fill="#8b93a7" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="16">Anyone can open the status page. The Wi-Fi in the house cannot reach the lab.</text>
 
+<g transform="translate(0 -32)">
 <line x1="540" y1="268" x2="540" y2="620" stroke="url(#spine)" stroke-width="1.5"/>
 
 <!-- Edge -->
@@ -110,4 +110,5 @@
 <text x="376" y="808" fill="#f7f8fb" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="15" font-weight="600">Two-node Proxmox</text>
 <text x="780" y="808" fill="#8b93a7" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="13" text-anchor="end">NAS file share</text>
 <text x="992" y="808" fill="#5c6478" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="13" text-anchor="end">not a backup host</text>
+</g>
 </svg>

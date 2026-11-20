@@ -18,7 +18,7 @@ A self-hosted platform for network and security infrastructure.
 
 ---
 
-![Architecture](docs/architecture/architecture.svg?v=4)
+![Architecture](docs/architecture/architecture.svg?v=5)
 
 ---
 
