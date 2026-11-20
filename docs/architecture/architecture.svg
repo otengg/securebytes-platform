@@ -1,14 +1,14 @@
-<svg width="100%" viewBox="0 0 690 780" role="img" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" viewBox="0 0 690 720" role="img" xmlns="http://www.w3.org/2000/svg">
 <title>SecureBytes platform architecture, public</title>
-<desc>Live lab layers without internal addresses or hardware identifiers. Solid boxes are live. The dashed box is a later decision.</desc>
+<desc>Live lab layers without internal addresses or hardware identifiers.</desc>
 <defs>
 <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
 </defs>
 
-<rect width="690" height="780" fill="#0d1117"/>
+<rect width="690" height="720" fill="#0d1117"/>
 
 <text x="40" y="32" fill="#e6edf3" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="500">SecureBytes platform — November 2026</text>
-<text x="40" y="52" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Solid = live · Dashed = later decision</text>
+<text x="40" y="52" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">What is running</text>
 
 <text x="40" y="84" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Edge</text>
 <rect x="40" y="94" width="610" height="70" rx="10" fill="#0c2d6b" stroke="#1f6feb" stroke-width="0.8"/>
@@ -75,10 +75,8 @@
 <text x="342" y="622" fill="#f0c674" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500" text-anchor="middle">Switch · Wi-Fi 7</text>
 <rect x="445" y="598" width="190" height="40" rx="6" fill="#3a2a0a" stroke="#d29922" stroke-width="0.8"/>
 <text x="540" y="622" fill="#f0c674" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500" text-anchor="middle">Two-node Proxmox</text>
-<rect x="55" y="648" width="370" height="36" rx="6" fill="#3a2a0a" stroke="#d29922" stroke-width="0.8"/>
-<text x="240" y="670" fill="#f0c674" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500" text-anchor="middle">NAS file share · not a backup host</text>
-<rect x="435" y="648" width="200" height="36" rx="6" fill="#21262d" stroke="#6e7681" stroke-width="0.8" stroke-dasharray="4 3"/>
-<text x="535" y="670" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500" text-anchor="middle">k3s · later decision</text>
+<rect x="55" y="648" width="580" height="36" rx="6" fill="#3a2a0a" stroke="#d29922" stroke-width="0.8"/>
+<text x="345" y="670" fill="#f0c674" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500" text-anchor="middle">NAS file share · not a backup host</text>
 
 <line x1="345" y1="164" x2="345" y2="204" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arrow)"/>
 <line x1="345" y1="274" x2="345" y2="314" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arrow)"/>
