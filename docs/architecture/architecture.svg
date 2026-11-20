@@ -1,85 +1,166 @@
-<svg width="100%" viewBox="0 0 690 720" role="img" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" viewBox="0 0 1200 980" role="img" xmlns="http://www.w3.org/2000/svg">
 <title>SecureBytes platform architecture, public</title>
-<desc>Live lab layers without internal addresses or hardware identifiers.</desc>
+<desc>Live lab layers without internal addresses or hardware identifiers. Home wireless cannot reach the lab.</desc>
 <defs>
-<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+<linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#10b981"/>
+<stop offset="1" stop-color="#22d3ee"/>
+</linearGradient>
+<pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+<circle cx="1" cy="1" r="0.7" fill="#ffffff" fill-opacity="0.045"/>
+</pattern>
+<radialGradient id="glow" cx="50%" cy="0%" r="70%">
+<stop offset="0" stop-color="#10b981" stop-opacity="0.16"/>
+<stop offset="1" stop-color="#10b981" stop-opacity="0"/>
+</radialGradient>
 </defs>
 
-<rect width="690" height="720" fill="#0d1117"/>
+<rect width="1200" height="980" fill="#07080d"/>
+<rect width="1200" height="980" fill="url(#dots)"/>
+<rect x="0" y="0" width="1200" height="280" fill="url(#glow)"/>
 
-<text x="40" y="32" fill="#e6edf3" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="500">SecureBytes platform — November 2026</text>
-<text x="40" y="52" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">What is running</text>
+<rect x="36" y="28" width="1128" height="924" rx="22" fill="#0b0d12" stroke="#ffffff" stroke-opacity="0.08"/>
+<rect x="36" y="28" width="1128" height="3" fill="url(#accent)"/>
 
-<text x="40" y="84" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Edge</text>
-<rect x="40" y="94" width="610" height="70" rx="10" fill="#0c2d6b" stroke="#1f6feb" stroke-width="0.8"/>
-<rect x="55" y="107" width="185" height="44" rx="6" fill="#0a1f4d" stroke="#388bfd" stroke-width="0.8"/>
-<text x="147" y="128" fill="#79c0ff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500" text-anchor="middle">Cloudflare Tunnel</text>
-<text x="147" y="144" fill="#a5cdff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">no inbound ports</text>
-<rect x="255" y="107" width="185" height="44" rx="6" fill="#0a1f4d" stroke="#388bfd" stroke-width="0.8"/>
-<text x="347" y="128" fill="#79c0ff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500" text-anchor="middle">Cloudflare Access</text>
-<text x="347" y="144" fill="#a5cdff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">admin paths only</text>
-<rect x="455" y="107" width="180" height="44" rx="6" fill="#0a1f4d" stroke="#388bfd" stroke-width="0.8"/>
-<text x="545" y="128" fill="#79c0ff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500" text-anchor="middle">Status page</text>
-<text x="545" y="144" fill="#a5cdff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">the public lab name</text>
+<text x="64" y="78" fill="#10b981" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" letter-spacing="3.2">SECUREBYTES PLATFORM</text>
+<text x="64" y="118" fill="#f4f6fb" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="34" font-weight="600">Architecture</text>
+<text x="64" y="148" fill="#8b93a7" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="15">The status page is the only public name. Home wireless cannot reach the lab.</text>
 
-<text x="40" y="194" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Ingress</text>
-<rect x="40" y="204" width="610" height="70" rx="10" fill="#0d3320" stroke="#3fb950" stroke-width="0.8"/>
-<rect x="55" y="217" width="185" height="44" rx="6" fill="#08210f" stroke="#3fb950" stroke-width="0.8"/>
-<text x="147" y="238" fill="#7ee787" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500" text-anchor="middle">Tunnel daemon</text>
-<text x="147" y="254" fill="#aff5b4" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">cloudflared</text>
-<rect x="255" y="217" width="185" height="44" rx="6" fill="#08210f" stroke="#3fb950" stroke-width="0.8"/>
-<text x="347" y="238" fill="#7ee787" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500" text-anchor="middle">Reverse proxy</text>
-<text x="347" y="254" fill="#aff5b4" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">nginx + wildcard TLS</text>
-<rect x="455" y="217" width="180" height="44" rx="6" fill="#08210f" stroke="#3fb950" stroke-width="0.8"/>
-<text x="545" y="238" fill="#7ee787" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500" text-anchor="middle">DNS</text>
-<text x="545" y="254" fill="#aff5b4" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">Unbound on the firewall</text>
+<rect x="978" y="64" width="142" height="34" rx="17" fill="#10b981" fill-opacity="0.1" stroke="#10b981" stroke-opacity="0.45"/>
+<circle cx="1000" cy="81" r="4" fill="#10b981"/>
+<text x="1014" y="86" fill="#10b981" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" letter-spacing="1.6">LIVE</text>
 
-<text x="40" y="304" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Services</text>
-<rect x="40" y="314" width="610" height="118" rx="10" fill="#161b22" stroke="#3fb950" stroke-width="0.8"/>
-<rect x="55" y="330" width="140" height="40" rx="6" fill="#08210f" stroke="#3fb950" stroke-width="0.8"/>
-<text x="125" y="348" fill="#7ee787" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500" text-anchor="middle">Lab directory</text>
-<text x="125" y="362" fill="#aff5b4" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">internal sign-in</text>
-<rect x="205" y="330" width="140" height="40" rx="6" fill="#08210f" stroke="#3fb950" stroke-width="0.8"/>
-<text x="275" y="348" fill="#7ee787" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500" text-anchor="middle">Vault</text>
-<text x="275" y="362" fill="#aff5b4" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">secrets, not git</text>
-<rect x="355" y="330" width="140" height="40" rx="6" fill="#08210f" stroke="#3fb950" stroke-width="0.8"/>
-<text x="425" y="348" fill="#7ee787" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500" text-anchor="middle">Splunk</text>
-<text x="425" y="362" fill="#aff5b4" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">homelab SIEM</text>
-<rect x="495" y="330" width="140" height="40" rx="6" fill="#08210f" stroke="#3fb950" stroke-width="0.8"/>
-<text x="565" y="348" fill="#7ee787" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500" text-anchor="middle">Network sensor</text>
-<text x="565" y="362" fill="#aff5b4" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">Security Onion</text>
-<rect x="55" y="380" width="290" height="36" rx="6" fill="#1d1633" stroke="#a371f7" stroke-width="0.8"/>
-<text x="200" y="402" fill="#d2a8ff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500" text-anchor="middle">Grafana · Prometheus</text>
-<rect x="355" y="380" width="280" height="36" rx="6" fill="#1d1633" stroke="#a371f7" stroke-width="0.8"/>
-<text x="495" y="402" fill="#d2a8ff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500" text-anchor="middle">Uptime Kuma</text>
+<!-- 01 Edge -->
+<rect x="52" y="176" width="1096" height="112" rx="16" fill="#ffffff" fill-opacity="0.025"/>
+<text x="72" y="214" fill="#10b981" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" letter-spacing="1.4">01</text>
+<text x="72" y="240" fill="#f4f6fb" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="18" font-weight="600">Edge</text>
 
-<text x="40" y="462" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Segments</text>
-<rect x="40" y="472" width="610" height="70" rx="10" fill="#3a2a0a" stroke="#d29922" stroke-width="0.8"/>
-<rect x="55" y="485" width="110" height="44" rx="6" fill="#3a2a0a" stroke="#d29922" stroke-width="0.8"/>
-<text x="110" y="512" fill="#f0c674" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500" text-anchor="middle">Lab</text>
-<rect x="175" y="485" width="110" height="44" rx="6" fill="#3a2a0a" stroke="#d29922" stroke-width="0.8"/>
-<text x="230" y="512" fill="#f0c674" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500" text-anchor="middle">Management</text>
-<rect x="295" y="485" width="90" height="44" rx="6" fill="#3a2a0a" stroke="#d29922" stroke-width="0.8"/>
-<text x="340" y="512" fill="#f0c674" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500" text-anchor="middle">IoT</text>
-<rect x="395" y="485" width="90" height="44" rx="6" fill="#3a2a0a" stroke="#d29922" stroke-width="0.8"/>
-<text x="440" y="512" fill="#f0c674" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500" text-anchor="middle">DMZ</text>
-<rect x="495" y="485" width="140" height="44" rx="6" fill="#3a2a0a" stroke="#d29922" stroke-width="0.8"/>
-<text x="565" y="504" fill="#f0c674" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500" text-anchor="middle">Home wireless</text>
-<text x="565" y="520" fill="#e3b341" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" text-anchor="middle">cannot reach the lab</text>
+<g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+<rect x="248" y="194" width="282" height="76" rx="12" fill="#10131a" stroke="#ef9f27" stroke-opacity="0.45"/>
+<rect x="249" y="195" width="280" height="3" rx="1.5" fill="#ef9f27"/>
+<text x="268" y="230" fill="#f4f6fb" font-size="15" font-weight="600">Cloudflare Tunnel</text>
+<text x="268" y="250" fill="#8b93a7" font-size="12">no inbound ports</text>
 
-<text x="40" y="572" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12">Infrastructure</text>
-<rect x="40" y="582" width="610" height="118" rx="10" fill="#3a2a0a" stroke="#d29922" stroke-width="0.8"/>
-<rect x="55" y="598" width="185" height="40" rx="6" fill="#3a2a0a" stroke="#d29922" stroke-width="0.8"/>
-<text x="147" y="622" fill="#f0c674" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500" text-anchor="middle">Firewall</text>
-<rect x="250" y="598" width="185" height="40" rx="6" fill="#3a2a0a" stroke="#d29922" stroke-width="0.8"/>
-<text x="342" y="622" fill="#f0c674" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500" text-anchor="middle">Switch · Wi-Fi 7</text>
-<rect x="445" y="598" width="190" height="40" rx="6" fill="#3a2a0a" stroke="#d29922" stroke-width="0.8"/>
-<text x="540" y="622" fill="#f0c674" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500" text-anchor="middle">Two-node Proxmox</text>
-<rect x="55" y="648" width="580" height="36" rx="6" fill="#3a2a0a" stroke="#d29922" stroke-width="0.8"/>
-<text x="345" y="670" fill="#f0c674" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500" text-anchor="middle">NAS file share · not a backup host</text>
+<rect x="542" y="194" width="282" height="76" rx="12" fill="#10131a" stroke="#ef9f27" stroke-opacity="0.45"/>
+<rect x="543" y="195" width="280" height="3" rx="1.5" fill="#ef9f27"/>
+<text x="562" y="230" fill="#f4f6fb" font-size="15" font-weight="600">Cloudflare Access</text>
+<text x="562" y="250" fill="#8b93a7" font-size="12">admin paths only</text>
 
-<line x1="345" y1="164" x2="345" y2="204" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arrow)"/>
-<line x1="345" y1="274" x2="345" y2="314" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arrow)"/>
-<line x1="345" y1="432" x2="345" y2="472" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arrow)"/>
-<line x1="345" y1="542" x2="345" y2="582" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="836" y="194" width="282" height="76" rx="12" fill="#10131a" stroke="#ef9f27" stroke-opacity="0.45"/>
+<rect x="837" y="195" width="280" height="3" rx="1.5" fill="#ef9f27"/>
+<text x="856" y="230" fill="#f4f6fb" font-size="15" font-weight="600">Status page</text>
+<text x="856" y="250" fill="#8b93a7" font-size="12">the public lab name</text>
+</g>
+
+<!-- 02 Ingress -->
+<rect x="52" y="302" width="1096" height="112" rx="16" fill="#ffffff" fill-opacity="0.025"/>
+<text x="72" y="340" fill="#10b981" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" letter-spacing="1.4">02</text>
+<text x="72" y="366" fill="#f4f6fb" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="18" font-weight="600">Ingress</text>
+
+<g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+<rect x="248" y="320" width="282" height="76" rx="12" fill="#10131a" stroke="#10b981" stroke-opacity="0.4"/>
+<rect x="249" y="321" width="280" height="3" rx="1.5" fill="#10b981"/>
+<text x="268" y="356" fill="#f4f6fb" font-size="15" font-weight="600">Tunnel daemon</text>
+<text x="268" y="376" fill="#8b93a7" font-size="12">cloudflared</text>
+
+<rect x="542" y="320" width="282" height="76" rx="12" fill="#10131a" stroke="#10b981" stroke-opacity="0.4"/>
+<rect x="543" y="321" width="280" height="3" rx="1.5" fill="#10b981"/>
+<text x="562" y="356" fill="#f4f6fb" font-size="15" font-weight="600">Reverse proxy</text>
+<text x="562" y="376" fill="#8b93a7" font-size="12">nginx + wildcard TLS</text>
+
+<rect x="836" y="320" width="282" height="76" rx="12" fill="#10131a" stroke="#22d3ee" stroke-opacity="0.45"/>
+<rect x="837" y="321" width="280" height="3" rx="1.5" fill="#22d3ee"/>
+<text x="856" y="356" fill="#f4f6fb" font-size="15" font-weight="600">DNS</text>
+<text x="856" y="376" fill="#8b93a7" font-size="12">Unbound on the firewall</text>
+</g>
+
+<!-- 03 Services -->
+<rect x="52" y="428" width="1096" height="200" rx="16" fill="#ffffff" fill-opacity="0.025"/>
+<text x="72" y="478" fill="#10b981" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" letter-spacing="1.4">03</text>
+<text x="72" y="504" fill="#f4f6fb" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="18" font-weight="600">Services</text>
+<text x="72" y="528" fill="#5c6478" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12">containers</text>
+<text x="72" y="546" fill="#5c6478" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12">and VMs</text>
+
+<g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+<rect x="248" y="446" width="282" height="76" rx="12" fill="#10131a" stroke="#22d3ee" stroke-opacity="0.4"/>
+<rect x="249" y="447" width="280" height="3" rx="1.5" fill="#22d3ee"/>
+<text x="268" y="482" fill="#f4f6fb" font-size="15" font-weight="600">Lab directory</text>
+<text x="268" y="502" fill="#8b93a7" font-size="12">internal sign-in</text>
+
+<rect x="542" y="446" width="282" height="76" rx="12" fill="#10131a" stroke="#22d3ee" stroke-opacity="0.4"/>
+<rect x="543" y="447" width="280" height="3" rx="1.5" fill="#22d3ee"/>
+<text x="562" y="482" fill="#f4f6fb" font-size="15" font-weight="600">Vault</text>
+<text x="562" y="502" fill="#8b93a7" font-size="12">secrets, not git</text>
+
+<rect x="836" y="446" width="282" height="76" rx="12" fill="#10131a" stroke="#10b981" stroke-opacity="0.4"/>
+<rect x="837" y="447" width="280" height="3" rx="1.5" fill="#10b981"/>
+<text x="856" y="482" fill="#f4f6fb" font-size="15" font-weight="600">Splunk</text>
+<text x="856" y="502" fill="#8b93a7" font-size="12">homelab SIEM</text>
+
+<rect x="248" y="534" width="282" height="76" rx="12" fill="#10131a" stroke="#f87171" stroke-opacity="0.45"/>
+<rect x="249" y="535" width="280" height="3" rx="1.5" fill="#f87171"/>
+<text x="268" y="570" fill="#f4f6fb" font-size="15" font-weight="600">Network sensor</text>
+<text x="268" y="590" fill="#8b93a7" font-size="12">Security Onion</text>
+
+<rect x="542" y="534" width="282" height="76" rx="12" fill="#10131a" stroke="#10b981" stroke-opacity="0.4"/>
+<rect x="543" y="535" width="280" height="3" rx="1.5" fill="#10b981"/>
+<text x="562" y="570" fill="#f4f6fb" font-size="15" font-weight="600">Grafana</text>
+<text x="562" y="590" fill="#8b93a7" font-size="12">Prometheus · push alerts</text>
+
+<rect x="836" y="534" width="282" height="76" rx="12" fill="#10131a" stroke="#10b981" stroke-opacity="0.4"/>
+<rect x="837" y="535" width="280" height="3" rx="1.5" fill="#10b981"/>
+<text x="856" y="570" fill="#f4f6fb" font-size="15" font-weight="600">Uptime Kuma</text>
+<text x="856" y="590" fill="#8b93a7" font-size="12">public status page</text>
+</g>
+
+<!-- 04 Segments -->
+<rect x="52" y="642" width="1096" height="112" rx="16" fill="#ffffff" fill-opacity="0.025"/>
+<text x="72" y="680" fill="#10b981" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" letter-spacing="1.4">04</text>
+<text x="72" y="706" fill="#f4f6fb" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="18" font-weight="600">Segments</text>
+
+<g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+<rect x="248" y="660" width="164" height="76" rx="12" fill="#10131a" stroke="#ffffff" stroke-opacity="0.1"/>
+<rect x="249" y="661" width="162" height="3" rx="1.5" fill="#10b981"/>
+<text x="330" y="704" fill="#f4f6fb" font-size="14" font-weight="600" text-anchor="middle">Lab</text>
+
+<rect x="424" y="660" width="164" height="76" rx="12" fill="#10131a" stroke="#ffffff" stroke-opacity="0.1"/>
+<rect x="425" y="661" width="162" height="3" rx="1.5" fill="#10b981" fill-opacity="0.7"/>
+<text x="506" y="704" fill="#f4f6fb" font-size="14" font-weight="600" text-anchor="middle">Management</text>
+
+<rect x="600" y="660" width="164" height="76" rx="12" fill="#10131a" stroke="#ffffff" stroke-opacity="0.1"/>
+<rect x="601" y="661" width="162" height="3" rx="1.5" fill="#22d3ee" fill-opacity="0.8"/>
+<text x="682" y="704" fill="#f4f6fb" font-size="14" font-weight="600" text-anchor="middle">IoT</text>
+
+<rect x="776" y="660" width="164" height="76" rx="12" fill="#10131a" stroke="#ffffff" stroke-opacity="0.1"/>
+<rect x="777" y="661" width="162" height="3" rx="1.5" fill="#22d3ee" fill-opacity="0.55"/>
+<text x="858" y="704" fill="#f4f6fb" font-size="14" font-weight="600" text-anchor="middle">DMZ</text>
+
+<rect x="952" y="660" width="166" height="76" rx="12" fill="#10131a" stroke="#ef9f27" stroke-opacity="0.7"/>
+<rect x="953" y="661" width="164" height="3" rx="1.5" fill="#ef9f27"/>
+<text x="1035" y="694" fill="#f4f6fb" font-size="14" font-weight="600" text-anchor="middle">Home wireless</text>
+<text x="1035" y="714" fill="#e8b86d" font-size="11" text-anchor="middle">cannot reach the lab</text>
+</g>
+
+<!-- 05 Infrastructure -->
+<rect x="52" y="768" width="1096" height="160" rx="16" fill="#ffffff" fill-opacity="0.025"/>
+<text x="72" y="818" fill="#10b981" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" letter-spacing="1.4">05</text>
+<text x="72" y="844" fill="#f4f6fb" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="18" font-weight="600">Infrastructure</text>
+
+<g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+<rect x="248" y="786" width="282" height="72" rx="12" fill="#10131a" stroke="#ffffff" stroke-opacity="0.1"/>
+<rect x="249" y="787" width="280" height="3" rx="1.5" fill="url(#accent)"/>
+<text x="268" y="828" fill="#f4f6fb" font-size="15" font-weight="600">Firewall</text>
+
+<rect x="542" y="786" width="282" height="72" rx="12" fill="#10131a" stroke="#ffffff" stroke-opacity="0.1"/>
+<rect x="543" y="787" width="280" height="3" rx="1.5" fill="url(#accent)"/>
+<text x="562" y="828" fill="#f4f6fb" font-size="15" font-weight="600">Switch · Wi-Fi 7</text>
+
+<rect x="836" y="786" width="282" height="72" rx="12" fill="#10131a" stroke="#ffffff" stroke-opacity="0.1"/>
+<rect x="837" y="787" width="280" height="3" rx="1.5" fill="url(#accent)"/>
+<text x="856" y="828" fill="#f4f6fb" font-size="15" font-weight="600">Two-node Proxmox</text>
+
+<rect x="248" y="870" width="870" height="40" rx="10" fill="#10131a" stroke="#ffffff" stroke-opacity="0.08"/>
+<text x="268" y="895" fill="#f4f6fb" font-size="14" font-weight="600">NAS file share</text>
+<text x="400" y="895" fill="#8b93a7" font-size="13">not a backup host</text>
+</g>
 </svg>
